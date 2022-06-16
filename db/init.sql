@@ -1,0 +1,1 @@
+CREATE DATABASE sinatra_db;
