@@ -1,0 +1,23 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: sinatra_db
+  pool: 2
+  username: postgres
+  password: postgres
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: sinatra_db_test
+  pool: 2
+  username: postgres
+  password: postgres
+
+# production:
+#   adapter: postgresql
+#   encoding: unicode
+#   database: database_name
+#   pool: 2
+#   username: your_username
+#   password: your_password
