@@ -1,9 +1,5 @@
 require 'sinatra'
 
-get '/' do
-    'hello'
-end
-
 configure :development do
     set :database, {
         adapter: 'postgresql',
@@ -11,6 +7,12 @@ configure :development do
         username: ENV['user'],
         password: ENV['password']
     }
+end
+
+set :database_file, "./config/database.yml"
+
+get '/' do
+    'hello'
 end
 
 get '/api/cars' do
